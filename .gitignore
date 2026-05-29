@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+.pnpm-store/
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# env — NEVER commit real keys (service role key is highly sensitive)
+.env
+.env.local
+.env*.local
+
+# supabase local
+/supabase/.branches
+/supabase/.temp
+/supabase/.env
+
+# testing
+/playwright-report/
+/test-results/
+/blob-report/
+
+# os / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# logs
+*.log
+
+# Claude Code local config
+.claude/
+
+# TS build info (regenerated on every build)
+tsconfig.tsbuildinfo
