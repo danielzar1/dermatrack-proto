@@ -26,9 +26,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up pnpm
+        # Version comes from package.json `packageManager` — don't also
+        # set `version:` here or the action errors with "multiple
+        # versions specified".
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - name: Set up Node
         uses: actions/setup-node@v4
